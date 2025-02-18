@@ -1,0 +1,41 @@
+nav {
+    background-color: #333; /* Dark background */
+    color: white; /* Light text */
+    padding: 10px 0; /* Padding top and bottom */
+  }
+  
+  .nav {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use Flexbox for horizontal layout */
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center; /* Vertically center items */
+  }
+  
+  .nav li {
+    padding: 0 15px; /* Padding on the sides of each list item */
+  }
+  
+  .nav a {
+    color: white; /* White link text */
+    text-decoration: none; /* Remove underlines */
+    font-weight: bold; /* Make text bolder */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .nav a:hover {
+    color: #f0ad4e; /* Change color on hover (e.g., a gold color) */
+  }
+  
+  /* Optional: Add some responsiveness */
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center text */
+    }
+  
+    .nav li {
+      padding: 10px 0; /* Adjust padding for stacked items */
+    }
+  }
